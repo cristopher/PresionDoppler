@@ -21,6 +21,11 @@ the("pres.sistolica.primtrim").onkeyup = function(e){
 }
 
 the("pres.diastolica.primtrim").onkeyup = function(e){
+    if ( e.key == "Enter" ) {
+        e.preventDefault();
+        the("respuesta_uterina_derecha_prim").focus()
+    }
+
     if (isNaN(the("pres.sistolica.primtrim").value) == false){
         var unTercioPSis = the("pres.sistolica.primtrim").value / 3;
         var unTercioPDias = "";
@@ -39,6 +44,10 @@ the("pres.diastolica.primtrim").onkeyup = function(e){
 }
 
 the("respuesta_uterina_derecha_prim").onkeyup = function(e){
+    if ( e.key == "Enter" ) {
+        e.preventDefault();
+        the("respuesta_uterina_izquierda_prim").focus()
+    }
     let ut = pctut(this.value);
     the("respuesta_uterina_derecha_percentil_prim").innerHTML = ut.pct;
 
@@ -50,6 +59,10 @@ the("respuesta_uterina_derecha_prim").onkeyup = function(e){
 };
 
 the("respuesta_uterina_izquierda_prim").onkeyup = function(e){
+    if ( e.key == "Enter" ) {
+        e.preventDefault();
+        the("graficoUterinasPrim").focus()
+    }
     let ut = pctut(this.value);
     the("respuesta_uterina_izquierda_percentil_prim").innerText = ut.pct;
 
