@@ -184,7 +184,7 @@ the("graficoUterinasPrim").onclick = function(){
             data: [2.84,2.71,2.53,2.38,2.24,2.11,1.99,1.88,1.79,1.71,1.61,1.54,1.47,1.41,1.35,1.3,1.25,1.21,1.17,1.13,1.11,1.06,1.04,1.01,0.99,0.97,0.95,0.94,0.92,0.91,0.91]
         }, {
             type: "line",
-                name: 'Arteria Promedio',
+                name: 'IP Promedio Arterias Uterinas',
                 dashStyle: "Dot",
                 marker: { symbol: 'square' },
                 lineWidth: 0,
