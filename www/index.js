@@ -148,11 +148,14 @@ the("graficoUterinasPrim").onclick = function(){
     the("modalBody").innerHTML = '<div id="graficoArtUtDerView"></div>';
 
     Highcharts.chart("graficoArtUtDerView", {
+        chart: {
+            height: 290
+        },
         title: {
             text: 'IP Promedio Arterias Uterinas',
             x: -20,
                 style: {
-                fontSize: '10px'
+                fontSize: '14px'
             }
         },
         plotOptions: {

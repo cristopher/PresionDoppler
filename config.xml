@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="cl.cristopher.pamdpu" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Calculador Presion Media (PAM) y Doppler Uterinas</name>
-    <description>Sample Apache Cordova App</description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
+    <description>Calculador de Presión Arterial Media (PAM) y Doppler de Uterinas</description>
+    <author email="rdlagoschile@gmail.com" href="https://crecimientofetal.cl">
+        Rudecindo Lagos Sandoval
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
@@ -11,5 +11,6 @@
     <platform name="electron">
         <icon src="www/img/app.png" target="app" />
         <icon src="www/img/installer.png" target="installer" />
+        <preference name="ElectronSettingsFilePath" value="res/electron/settings.json" />
     </platform>
 </widget>
