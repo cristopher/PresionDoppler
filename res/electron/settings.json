@@ -2,6 +2,9 @@
     "browserWindow": {
         "width": 800,
         "height": 400,
-        "resizable": false
+        "resizable": false,
+        "center": true,
+        "movable": true,
+        "autoHideMenuBar" : true
     }
 }
